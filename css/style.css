@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+body{
+    background-color: #eee;
+    padding:0;
+    margin:0;
+    font-family:
+     'Montserrat', sans-serif;
+}
+
+#headerBlock{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: #d84f57;
+    position: fixed;
+
+}
+#headerBlock .container {
+    display: flex;
+    width: 1200px;
+    margin: 0px auto;
+    height: 55px;
+    align-items: center ;
+}
+
+#headerBlock .container .leftNav{
+    flex: 1;
+}
+
+#headerBlock .container .rightNav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+/* slider block css here */
+/*#sliderBlock{
+    position: absolute;
+    top: 0px ;
+    left: 0;
+    width: 100%;
+}*/
+
+
+#sliderBlock img{
+    width: 100%; 
+    height: 450px ;
+}
+
+/*========left menu block==========*/
+.leftNav section{
+    display: flex;
+}
+ 
+.leftNav ul,
+.rightNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.leftNav ul li a,
+.rightNav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 14px;
+    display: inline-block;
+}
+ 
+.logo {
+    flex: 1 ;
+}
+
+.leftmenu{
+    flex: 8;
+}
+
+.logo a{
+    background-image: url(../image/59538b35953097248522a65b4b79650e.png);
+    width: 80px;
+    height: 48px;
+    display: flex;
+    text-indent: -9999px;
+}
+
+.leftNav ul li a.active{
+font-weight: 600;
+border-bottom: 3px solid #fff;
+transition: ease-in-out 0.6s;
+}
+
+.leftNav ul li a:hover{
+    color:#f9e7ea;  
+}
+
+.fa-user-circle{
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+.fa-chevron-down{
+   margin: 0px 0px 0px 6px;
+}
+
+.after_user_circle{
+    margin: -24px 21px 0px 41px !important;
+    display: block;
+}
+
+#searchBusBlock article{
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+#sliderBlock{
+    background-image: url("../image/safetyplus1.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;  
+    
+}
+
+   /* margin-top: -55px; ---first remove silderblock then apply 
+   margin top latest block is visible*/
+
+
+ /* using padding we are use 3(from,to,date) input block in same size*/
+input[type="date"]{
+    font-size: 11px;
+    padding: 14px 30px !important;
+    border-right: none !important;
+}
+
+/*increase the input block elements*/
+#sliderBlock article input{
+    padding: 14px 28px 16px 40px;
+    border:none;
+    border-right: 1.3px solid #888;
+    box-sizing: border-box;
+
+}
+
+/* now consider 4 input tag(search buses)-------*/
+#sliderBlock article button{
+height: 46px;
+width: 144px;
+background: #d74f57;
+box-sizing: border-box;
+border: none;
+font-size: 14px;
+color: #fff;
+text-transform: capitalize;
+font-weight: bold;
+}
+
+.city_icon{
+    position: relative;
+}
+
+.city_icon i{
+    position: absolute;
+    top: -14px;
+    left: 6px;
+    font-size: 20px;
+}
+
+#latestUpdateBlock{
+display: flex;
+justify-content: center;
+}
+
+#latestUpdateBlock article{
+    width: 530px;
+    height: 100px;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    background-color: #fff5e5;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+
+#latestUpdateBlock article div:nth-child(1){
+    flex:2;
+} 
+
+#latestUpdateBlock article div:nth-child(2){
+    flex:8;
+} 
+
+#latestUpdateBlock article div:nth-child(3){
+    flex:3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 89px;
+} 
+
+#bell-on i {
+    color: #d74f57 ;
+    font-size: 50px;
+}
+
+
+#latestUpdateBlock article h4{  
+ font-size: 15px;
+ margin: 0;
+ padding: 5px;
+}
+
+#latestUpdateBlock article p {  
+font-size: 12px;
+margin: 0;
+padding: 5px;
+font-weight: lighter;   
+}
+
+#latestUpdateBlock article button {
+    width: 130px;
+    height: 25px;
+    background: #d74f57;
+    color: #fff;
+    padding: 4px;
+    border: 4px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/*--------on time block start here---*/
+#OnTimeBlock> article{
+    width: 1200px;
+    border: 1px solid #cccccc;
+    background: white;
+    margin: 60px auto;
+    display: flex;
+    height: 320px;
+}
+
+.leftOnDiv  {
+    flex: 1;
+}
+
+.leftOnDiv p{
+    background-image: url(../image/ic-shield-red-big.png);
+    height: 88px ;
+    width: 88px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin: 30px;
+   
+}
+
+
+.rightOnDiv{
+    flex: 8;
+}
+
+.img3_hero, 
+.img4_Hero {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+
+.img3_hero {
+    background-image: url(../image/tip-icon.png);
+    width: 24px;
+    height: 24px;
+}
+
+.img4_Hero {
+    background-image: url(../image/otgText.png);
+    width: 156px;
+    height: 26px;
+}
+.rightInsideFooter {
+    display: flex;
+    margin: 10px;
+} 
+
+.rightInsideFooter div{
+    flex: 1;
+}
+
+
+
+/*--------on time block  ends here---*/
+
+
+/*---trails block-----*/
+
+/*#secondSectionBlock>article{
+ width: 1200px;
+ border:1px solid #cccccc;
+ border-radius:3px;
+ background-color:#e8ecef;
+ margin:0 auto;
+ display: flex;
+ height: 500px;
+
+}
+
+.leftOnDiv2{
+    flex: 1;
+}
+
+.leftOnDiv2 p{
+    background:url(../image/tmb_img.png);
+    width: 440px;
+    height: 282px;
+    background-size: contain;
+    margin-left: 60px;
+    margin-top:40px;
+    margin-right: 80px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+     
+}
+.rightOnDiv2{
+    flex: 4;
+
+}
+
+.rightInsideSection2 h1{
+    height: 29px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 60px;
+    color: #4a4a4a;
+}
+
+.rightInsideSection2 p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.rightInsideSection2 button{
+    color: #4c8fdb;
+    padding: 8px 17px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #4c8fdb;
+
+}
+.rightInsidefooter2 .div {
+    display: flex;
+   /* margin: 60px; */
+}
+
+rightInsidefooter2 div{
+    flex: 1;
+    
+}
+
+.rightInsidefooter2 div h2{
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+
+*/
+/*.rightInsidefooter2>div{
+    margin-left: 135px;
+    float: left;
+    width: 200px;
+    text-align: center;
+    padding-top: 30px;
+}
+.rightInsidefooter2 div:nth-child(1){
+    font-size: 14px;
+    text-align: center;
+}
+.rightInsidefooter2 div:nth-child(2){
+    font-size: 36px;
+    text-align: center;
+    color: #da4d52;
+}
+
+.rightInsidefooter2 div:nth-child(3){
+font-size: 14px;
+    text-align: center;
+    color: #4a4a4a;
+}*/
+.rightInsidefooter2 div h5{
+    font-size: 36px;
+    text-align: center;
+    color: #da4d52;
+}
+
+.rightInsidefooter2 div p{
+    font-size: 14px;
+    text-align: center;
+    color: #4a4a4a
+}
+/*image {
+    display: inline-block;
+    vertical-align: middle;*/
+/*-----Postion---Relative and absolute------
+.test{
+    background: red;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #111;
+    color: #fff;
+}
+#absolute{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background: green;
+}
+#relative{
+    position: relative;
+    top:100px;
+    left: 100px;
+}
+---------------*/
+
+
+
+/*---------Attribute selector--
+ #attribute input{
+     background: red ;
+ }
+
+
+ input[type="password"]{
+     background: green !important;
+ }
+
+ input[type="gh"]{
+    background: yellow !important;
+}
+
+ input[type="email"]{
+        background: #888 !important;
+}
+*/
+
+/* normal using class and 
+important tag then use colour----
+/* 
+.green{
+    background: green !important;
+}  */
+
+/*------border-box example---------
+.div1{
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+
+}
+
+.div2{
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+----------------*/
+
+
+/*2...border_-size:border box
+#test_borderbox{
+    background: red;
+    height: 300px;
+    width: 300px;
+}
+
+#test_borderbox input{
+    box-sizing: border-box;
+    width: 100%;
+}
+*/
+/*1....border-size:content box
+#test_borderbox{
+    background: red;
+    height: 300px;
+    width: 300px;
+}
+
+#test_borderbox input{
+    box-sizing: content-box;
+    width: 100%;
+}
+*/
+
+/*use only padding and height its overflowing condition
+ solution use border-size
+ (it has 2 type---1.content box-
+ --2.border-box
+#test_borderbox {
+    background: red;
+    height: 300px;
+    width: 300px;
+}
+
+#test_borderbox input{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+} 
+*/
+
+
+
+
+
+/*!important example*/
+/*.sectionclass{
+    background-color: red !important;
+}
+
+.sectionclass{
+    background-color: green;
+}
+*/
+/*#display{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+         or
+    align-items: center;
+    justify-content: center;
+         or
+
+}*/
+/*#display{
+    background: red;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #111 ;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    display: none;
+        or
+    visibility: hidden;
+        or
+    /*text-indent: -9999px;
+         or
+    /*font-size: 0;  
+
+}*/
+
+/*----pseudo class-------
+/nav:first-child{
+    background: red;
+//}
+
+nav:last-child{
+    background-color: royalblue;
+   color: white;
+}
+*/
+/*nth selector css 
+//nav:nth-child(1){
+    background-color: red;
+//}
+
+nav:nth-child(2){
+    background-color: yellow;
+    color: #fff;
+}
+
+*/
+
+/* ----Nth selector css
+//nav:nth-child(odd){
+    background-color: #fff;
+    color: #111;
+    padding: 10px;
+    margin: 10px 0px;
+//}
+
+nav:nth-child(even){
+    background-color: #ccc;
+    color: #111;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+--------*/
+
+
